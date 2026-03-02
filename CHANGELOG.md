@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+  - Fixed Django 6.0 deprecation warnings in template tags by avoiding no-argument
+    `format_html()` calls in `register_notify_callbacks`, `live_notify_badge`, and
+    `live_notify_list`.
+
 ## 1.9.0
 
   - Added URLs for actor, target and action_object in the unread notification list API view
